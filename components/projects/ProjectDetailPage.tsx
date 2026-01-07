@@ -5,10 +5,23 @@ import ProjectDetailPrinciples from "./ProjectDetailPrinciples";
 import ProjectDetailTroubleshooting from "./ProjectDetailTroubleshooting";
 import ProjectDetailNotes from "./ProjectDetailNotes";
 import ProjectDetailToc from "./ProjectDetailToc";
-import type { Project } from "./ProjectDetailPage";
 
 import ProjectDetailDecisions from "./ProjectDetailDecisions";
 import ProjectDetailIncidentLog from "./ProjectDetailIncidentLog";
+
+export type Project = {
+  slug: "keeb-station" | "bulletin-board";
+  title: string;
+  subtitle?: string;
+  period?: string;
+  role?: string;
+  stack?: string[];
+  links?: {
+    github?: string;
+    demo?: string;
+    docs?: string;
+  };
+};
 
 export default function ProjectDetailPage({ project }: { project: Project }) {
   const isKeeb = project.slug === "keeb-station";
