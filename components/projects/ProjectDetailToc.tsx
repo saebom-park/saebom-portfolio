@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type { Project } from "./ProjectDetailPage";
+import type { Project } from "./types";
+
 
 type TocItem = { id: string; label: string };
 

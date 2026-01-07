@@ -1,7 +1,8 @@
 import Container from "@/components/ui/Container";
 import TechBadge from "@/components/ui/TechBadge";
 import Link from "next/link";
-import type { Project } from "./ProjectDetailPage";
+import type { Project } from "./types";
+
 
 export default function ProjectDetailHero({ project }: { project: Project }) {
   const repo = project.links.find((l) => l.label.toLowerCase() === "repo");

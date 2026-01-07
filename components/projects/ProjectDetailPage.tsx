@@ -9,19 +9,7 @@ import ProjectDetailToc from "./ProjectDetailToc";
 import ProjectDetailDecisions from "./ProjectDetailDecisions";
 import ProjectDetailIncidentLog from "./ProjectDetailIncidentLog";
 
-export type Project = {
-  slug: "keeb-station" | "bulletin-board";
-  title: string;
-  subtitle?: string;
-  period?: string;
-  role?: string;
-  stack?: string[];
-  links?: {
-    github?: string;
-    demo?: string;
-    docs?: string;
-  };
-};
+import type { Project } from "./types";
 
 export default function ProjectDetailPage({ project }: { project: Project }) {
   const isKeeb = project.slug === "keeb-station";
