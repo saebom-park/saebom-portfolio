@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# saebom-portfolio
 
-## Getting Started
+> Backend-focused portfolio showcasing production-minded projects, architectural decisions, and troubleshooting logs.
 
-First, run the development server:
+이 저장소는 기능 나열형 포트폴리오가 아니라,  
+**운영 환경을 가정한 백엔드 설계 판단과 문제 해결 과정**을 중심으로 정리한 개인 포트폴리오입니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What this portfolio focuses on
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 단순 CRUD 구현이 아닌 **운영 시나리오 기반 설계**
+- 인증 / 권한 / 트랜잭션 / 상태 전이 등 **구조적 판단**
+- 실제 개발 중 발생한 문제를 **원인–해결–예방 관점**으로 정리
+- 기술 선택보다 **왜 그렇게 설계했는지**에 대한 기록
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Projects
 
-To learn more about Next.js, take a look at the following resources:
+### 1. Bulletin Board (운영형 게시판 서비스)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Stack**
+- Spring Boot
+- MyBatis
+- MySQL
+- Thymeleaf
+- Spring Security
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Key Topics**
+- 세션 기반 인증 → Spring Security 단계적 전환
+- Owner / Admin 권한 정책 분리
+- Controller–Service–Mapper 책임 고정
+- 인증 전환 과정에서 발생한 사용자 식별 문제 해결
+- 실사용 시나리오 기반 트러블슈팅 정리
 
-## Deploy on Vercel
+→ 상세 페이지:  
+- Project Context / Design Principles / Troubleshooting / Notes 정리 포함
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 2. Keeb Station (전자상거래 도메인 설계 실습)
+
+**Status**
+- 현재 진행 중 (Active)
+
+**Focus**
+- 주문 / 결제 / 재고 도메인 설계
+- 상태 전이 기반 비즈니스 로직
+- 트랜잭션 경계 설정
+- 동시성 이슈 대비 (Optimistic Lock)
+
+→ 설계 노트 및 트러블슈팅은 정리 중이며,  
+완료된 범위까지 공개합니다.
+
+---
+
+## Documentation & Notes
+
+이 포트폴리오는 코드 외에도 다음 문서들을 함께 제공합니다.
+
+- **Concept Notes**
+  - 설계 기준
+  - 핵심 개념 정리
+  - 기술 선택 근거
+
+- **Troubleshooting Logs**
+  - 실제 발생한 문제
+  - 원인 분석
+  - 해결 방식
+  - 재발 방지 기준
+
+각 프로젝트 상세 페이지에서 관련 문서로 연결됩니다.
+
+---
+
+## About
+
+저는 특정 언어나 프레임워크에 의존하기보다,  
+**문제를 구조화하고 시스템의 흐름을 설계하는 데** 개발의 중심을 둡니다.
+
+실무에서 발생하는 혼란의 대부분은  
+기술 부족이 아니라 **책임 경계와 판단 기준의 부재**에서 시작된다고 믿고 있으며,  
+이 포트폴리오는 그 기준을 스스로 세워온 기록입니다.
+
+---
+
+## Links
+
+- Portfolio Site: (배포 후 링크 추가)
+- GitHub: https://github.com/saebom-park
+- Resume: https://raw.githubusercontent.com/saebom-park/saebom-portfolio/main/public/saebom-park-backend.pdf
+
+
+---
+
+> This repository is actively maintained.

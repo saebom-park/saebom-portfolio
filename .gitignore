@@ -39,3 +39,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+
+# optional build artifacts
+dist/
+
+# private resume drafts
+resume_draft.*
+resume_private.*
