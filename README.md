@@ -3,16 +3,16 @@
 > Backend-focused portfolio showcasing production-minded projects, architectural decisions, and troubleshooting logs.
 
 이 저장소는 기능 나열형 포트폴리오가 아니라,  
-**운영 환경을 가정한 백엔드 설계 판단과 문제 해결 과정**을 중심으로 정리한 개인 포트폴리오입니다.
+**운영 환경을 가정한 백엔드 설계 판단과 문제 해결 과정**을 중심으로 정리한 포트폴리오입니다.
 
 ---
 
 ## What this portfolio focuses on
 
-- 단순 CRUD 구현이 아닌 **운영 시나리오 기반 설계**
-- 인증 / 권한 / 트랜잭션 / 상태 전이 등 **구조적 판단**
-- 실제 개발 중 발생한 문제를 **원인–해결–예방 관점**으로 정리
-- 기술 선택보다 **왜 그렇게 설계했는지**에 대한 기록
+- 단순 CRUD 구현이 아닌 **운영 시나리오를 기준으로 설계**
+- 인증 / 권한 / 트랜잭션 / 상태 전이 등 **구조적 판단을 명시**
+- 실제 개발 중 발생한 문제를 **원인–해결–예방 관점으로 기록**
+- 기술 선택보다 **설계 의사결정의 근거를 설명**
 
 ---
 
@@ -34,8 +34,9 @@
 - 인증 전환 과정에서 발생한 사용자 식별 문제 해결
 - 실사용 시나리오 기반 트러블슈팅 정리
 
-→ 상세 페이지:  
-- Project Context / Design Principles / Troubleshooting / Notes 정리 포함
+→ 상세 페이지에서는  
+Project Context / Design Principles / Troubleshooting / Notes를 통해  
+설계 기준과 문제 해결 과정을 확인할 수 있습니다.
 
 ---
 
@@ -81,13 +82,13 @@
 
 실무에서 발생하는 혼란의 대부분은  
 기술 부족이 아니라 **책임 경계와 판단 기준의 부재**에서 시작된다고 믿고 있으며,  
-이 포트폴리오는 그 기준을 스스로 세워온 기록입니다.
+이 포트폴리오는 그 기준을 실제 프로젝트에 적용하며 검증해온 기록입니다.
 
 ---
 
 ## Links
 
-- Portfolio Site: (배포 후 링크 추가)
+- Portfolio Site: https://saebom-portfolio.vercel.app
 - GitHub: https://github.com/saebom-park
 - Resume: https://raw.githubusercontent.com/saebom-park/saebom-portfolio/main/public/saebom-park-backend.pdf
 
