@@ -15,7 +15,7 @@ export default function ProjectDetailPage({ project }: { project: Project }) {
   const isKeeb = project.slug === "keeb-station";
 
   return (
-    <main className="min-h-screen selection:bg-blue-500/30">
+    <main className="min-h-screen bg-black text-zinc-200 selection:bg-blue-500/30 selection:text-blue-200">
       <ProjectDetailHero project={project} />
 
       <section className="py-24">

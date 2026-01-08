@@ -10,7 +10,7 @@ export default function About() {
       <Container>
         <div className="grid md:grid-cols-[1fr_1.5fr] gap-16 items-start">
           {/* LEFT: Intro */}
-          <div className="sticky top-24">
+          <div className="md:sticky md:top-24">
             <SectionHeader title="ABOUT ME" subtitle="Legacy to Modern" />
             <div className="space-y-6 text-zinc-400 leading-relaxed">
               <p>
